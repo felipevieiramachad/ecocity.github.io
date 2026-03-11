@@ -105,10 +105,53 @@
         </section>
         <section id="denuncia">
             <img src="img/noimage01.png" alt="Denuncia" width="480" height="480">
-            
+            <div>
+                <h1>Denuncie aqui.</h1>
+                <p>
+                    Encontrou um ponto de descarte irregular de lixo?<br>
+                    Ajude a manter a cidade limpa registrando uma denúncia.<br>
+                    Envie uma descrição e uma foto do local para análise.
+                </p>
+                <form id="formDenuncia">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+                    <label for="local">Local do problema:</label><br>
+                    <input type="text" id="local" name="local" placeholder="Rua, bairro ou referência" required><br><br>
+                    <label for="descricao">Descrição:</label><br>
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o problema encontrado"></textarea><br><br>
+                    <label for="imagem">Enviar imagem:</label><br>
+                    <input type="file" id="imagem" name="imagem" accept="image/*"><br><br>
+                    <button type="submit">Enviar Denúncia</button>
+                </form>
+                <p id="mensagemDenuncia" style="display:none; color:green;">
+                    ✅ Denúncia enviada com sucesso! A equipe responsável irá analisar a situação.
+                </p>
+            </div>
         </section>
         <section id="coleta">
-            
+            <div>
+                <h1>Solicitar coleta de itens de grande porte.</h1>
+                <p class="parag">
+                    Precisa descartar móveis, eletrodomésticos ou outros objetos grandes?<br>
+                    Solicite a coleta informando seus dados e o tipo de item que deseja descartar.<br>
+                    Nossa equipe entrará em contato para agendar a retirada.
+                </p>
+                <form id="formColeta">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+                    <label for="endereco">Endereço:</label><br>
+                    <input type="text" id="endereco" name="endereco" required><br><br>
+                    <label for="item">Item para coleta:</label><br>
+                    <input type="text" id="item" name="item" placeholder="Ex: sofá, geladeira, colchão"><br><br>
+                    <label for="descricao">Descrição:</label><br>
+                    <textarea id="descricao" name="descricao" rows="4"></textarea><br><br>
+                    <button type="submit">Solicitar Coleta</button>
+                </form>
+                    <p id="mensagem" style="display:none; color:green;">
+                        ✅ Sua solicitação foi enviada com sucesso! <br>
+                        Em breve entraremos em contato para agendar a coleta.
+                    </p>
+            </div>
             <img src="img/noimage00.png" alt="Coleta" width="480" height="480">
         </section>
     </main>

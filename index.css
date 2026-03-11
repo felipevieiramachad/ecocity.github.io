@@ -132,7 +132,27 @@ header img {
     position: relative;
 }
 
+form button {
+    background-color: #329b32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
+form button:hover {
+    background-color: #2a842a;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    margin-top: 4px;
+}
 
 footer {
     background-color: #329b32;
