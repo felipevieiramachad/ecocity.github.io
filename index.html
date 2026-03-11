@@ -110,21 +110,26 @@
                 <p>
                     Encontrou um ponto de descarte irregular de lixo?<br>
                     Ajude a manter a cidade limpa registrando uma denúncia.<br>
-                    Envie uma descrição e uma foto do local para análise.
+                    Envie uma descrição e uma foto do local para análise.<br><br>
                 </p>
                 <form id="formDenuncia">
                     <label for="nome">Nome:</label><br>
                     <input type="text" id="nome" name="nome" required><br><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="whatsapp">WhatsApp:</label><br>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="(47) 99999-9999" required><br><br>
                     <label for="local">Local do problema:</label><br>
                     <input type="text" id="local" name="local" placeholder="Rua, bairro ou referência" required><br><br>
                     <label for="descricao">Descrição:</label><br>
                     <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o problema encontrado"></textarea><br><br>
                     <label for="imagem">Enviar imagem:</label><br>
                     <input type="file" id="imagem" name="imagem" accept="image/*"><br><br>
-                    <button type="submit">Enviar Denúncia</button>
+                    <button type="submit">Enviar Denúncia</button><br><br>
                 </form>
                 <p id="mensagemDenuncia" style="display:none; color:green;">
-                    ✅ Denúncia enviada com sucesso! A equipe responsável irá analisar a situação.
+                    ✅ Denúncia enviada com sucesso! <br>
+                    A equipe responsável irá analisar a situação.
                 </p>
             </div>
         </section>
@@ -139,13 +144,17 @@
                 <form id="formColeta">
                     <label for="nome">Nome:</label><br>
                     <input type="text" id="nome" name="nome" required><br><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="whatsapp">WhatsApp:</label><br>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="(47) 99999-9999" required><br><br>
                     <label for="endereco">Endereço:</label><br>
                     <input type="text" id="endereco" name="endereco" required><br><br>
                     <label for="item">Item para coleta:</label><br>
                     <input type="text" id="item" name="item" placeholder="Ex: sofá, geladeira, colchão"><br><br>
                     <label for="descricao">Descrição:</label><br>
                     <textarea id="descricao" name="descricao" rows="4"></textarea><br><br>
-                    <button type="submit">Solicitar Coleta</button>
+                    <button type="submit">Solicitar Coleta</button><br><br>
                 </form>
                     <p id="mensagem" style="display:none; color:green;">
                         ✅ Sua solicitação foi enviada com sucesso!<br>
